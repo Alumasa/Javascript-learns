@@ -3,7 +3,7 @@ const robot = {
     model: 'B-4MI',
     mobile: true,
     greetMaster() {
-        console.log(`I'm model ${this.model}, how may I be of service?`);
+        console.log(`I'm model ${this.model},may I be of service?`);
     }
   }
   
@@ -12,18 +12,19 @@ const robot = {
       model,
       mobile,
       greetMaster() {
-        console.log(`I'm model ${this.model}, how may I be of service?`);
+        console.log(`I'm model ${this.model},may I be of service?`);
       }
     }
   }
+
   
   const shinyNewRobot = massProdRobot('TrayHax', true)
   
   const chargingStation = {
-    _name: 'Electrons-R-Us',
+    _name: 'ElectronsUs',
     _robotCapacity: 120,
     _active: true,
-    _chargingRooms: ['Low N Slow', 'Middle of the Road', 'In and Output'],
+    _chargingRooms: ['LowNSlow', 'MiddleoftheRoad', 'InandOutput'],
   
     set robotCapacity(newCapacity) {
       if (typeof newCapacity === 'number') {
